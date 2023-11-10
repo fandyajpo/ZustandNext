@@ -10,7 +10,7 @@ This repository demonstrates the simplicity of integrating Zustand, a small, fas
 
 ## Requirements
 
-- Node.js (v12.0.0 or higher)
+- Node.js (18.0.0 or higher)
 - npm or Yarn
 
 ## Getting Started
@@ -20,4 +20,4 @@ Follow these steps to incorporate Zustand into your Next.js project:
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/your-username/your-nextjs-zustand-project.git
+   git clone https://github.com/fandyajpo/ZustandNext.git
