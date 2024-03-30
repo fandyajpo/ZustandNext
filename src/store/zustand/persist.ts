@@ -3,6 +3,7 @@ import { persist } from "zustand/middleware";
 
 interface BearValue {
   count: number;
+  user: number;
 }
 
 interface BearState extends BearValue {
@@ -11,6 +12,7 @@ interface BearState extends BearValue {
 
 const initial = {
   count: 0,
+  user: 0,
 };
 
 export const usePersistStore = create<BearState>()(

@@ -1,14 +1,9 @@
 "use client";
 import { useStore, usePersistStore } from "@/store";
-import { useEffect } from "react";
 
 const Add = () => {
   const state = useStore();
-  const persist = usePersistStore();
-
-  useEffect(() => {
-    usePersistStore.persist.rehydrate();
-  }, []);
+  const { dispatch, user, count } = usePersistStore();
 
   return (
     <div className="bg-white flex flex-col">
@@ -37,11 +32,11 @@ const Add = () => {
       >
         Bulk Update
       </button>
-      <button
-        className="bg-orange-500"
-        onClick={() => persist.dispatch({ count: 7 })}
-      >
-        Persist Item {persist.count}
+      <button className="bg-orange-500" onClick={() => dispatch({ count: 7 })}>
+        Persist Item {count}
+      </button>
+      <button className="bg-orange-500" onClick={() => dispatch({ user: 5 })}>
+        Persist Item {user}
       </button>
     </div>
   );
