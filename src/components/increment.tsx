@@ -35,6 +35,9 @@ const Add = () => {
       <button className="bg-orange-500" onClick={() => dispatch({ count: 7 })}>
         Persist Item {count}
       </button>
+      <button className="bg-orange-500" onClick={() => dispatch({ count: 4 })}>
+        Persist Item change {count}
+      </button>
       <button className="bg-orange-500" onClick={() => dispatch({ user: 5 })}>
         Persist Item {user}
       </button>
